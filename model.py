@@ -32,9 +32,7 @@ import numpy as np
 def compute_scores(x, params):
     """Return raw linear scores x @ w + b, shape (n_samples,)."""
     # TODO: score each example as a linear function of the current weights and bias.
-    test = np.matmul(x, params['w']) + params['b']
-    #print(test)
-    return np.ones(x.shape[0])
+    return np.matmul(x, params['w']) + params['b']
 
 # Step 4 - predict_from_scores (not yet solved)
 # TODO: implement
