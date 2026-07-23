@@ -47,7 +47,7 @@ def predict_from_scores(scores):
 def hinge_loss_example(score, y):
     # TODO: return the hinge loss for a single example with raw score `score` and label y in {-1, +1}.
     margin = 1 - y * score
-    return max(margin, 0.0)
+    return np.maximum(margin, 0.0)
 
 # Step 6 - svm_objective (not yet solved)
 # TODO: implement
